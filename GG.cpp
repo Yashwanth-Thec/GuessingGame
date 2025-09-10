@@ -31,7 +31,7 @@ int main() {
        int guess;
        int numGuesses = 0;
 
-        cout << "I have picked a number between 1 and 100. Can you guess it?\n";
+        cout << "I have picked a number between 1 and 100. Can you guess it?" << endl;
 	// As long as the user hasn't guessed the random number this keeps repeating
         do {
             cout << "Enter your guess: ";
@@ -47,7 +47,7 @@ int main() {
             }
 	    //Tell if guess correct
 	    else {
-	      cout << "Congratulations! You guessed the number in " << numGuesses << " tries." << end l;
+	      cout << "Congratulations! You guessed the number in " << numGuesses << " tries." << endl;
             }
 
         } while (guess != secretNumber);
@@ -59,10 +59,10 @@ int main() {
         //If user dosnt want to play then this sets the boolean to false and stops the game
         if (choice != 'y' && choice != 'Y') {
             playAgain = false;
-            cout << "Thanks for playing!\n";
+            cout << "Thanks for playing!" << endl;
         }
 
-        cout << "\n";
+        cout << endl;
     }
 
     return 0;
